@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container mb-3 p-3">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="pe-3" src="img/logo.png" alt="logo" />
+                <div class="loge-type d-inline-block text-white">
+                    <h1 class="mb-0">Weather</h1>
+                    <p class="mb-0">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5  main-photo">
+        <div class="container py-5">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="serach">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control py-3" placeholder="Find your location..."
+                                id="search" />
+                            <button onclick="getWeather()" id="btnFind" class="btn btn-primary ms-2 px-5 rounded-pill"
+                                type="submit">
+                                Find
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3 mx-auto">
+                    <div class="col-md-4">
+                        <div class="holder rounded-4 h-100">
+                            <div class="main-title p-2">
+                                <span id="dayDiv1"></span>
+                                <span id="data"></span>
+                            </div>
+                            <div id="main-content" class="p-5">
+                                <span id="mainCity" class="d-block pb-3"></span>
+                                <div class="d-flex justify-content-between align-baseline">
+                                    <h1 id="temperatureDiv1" class="fw-bold"></h1>
+                                    <div id="weatherIconDiv1" class=" "></div>
+                                </div>
+                                <span id="weatherInfo1" class="text-primary"></span>
+                                <div id="custom" class="d-flex"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-holder rounded-4 text-center h-100">
+                            <div id="nextDayHolder1" class="day-holder text-center px-3 p-2"></div>
+                            <div class="degree px-3 py-1">
+                                <div id="weatherIconDiv2" class="forecast-icon px-3 py-1">
+                                   
+                                </div>
+                                <div id="temperatureDiv2" class="fs-1 text-white fw-bold px-3">
+                              
+                                </div>
+                            </div>
+                            <div id="weatherInfo2" class="custom px-3 py-2">
+                              
+                            </div>
+                            <div id="custom2" class="d-flex mx-4"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-holder rounded-4 text-center h-100">
+                            <div id="nextDayHolder2" class="day-holder text-center px-3 p-2"></div>
+                            <div class="degree px-3 py-1">
+                                <div id="weatherIconDiv3" class="forecast-icon px-3 py-1">
+                                </div>
+                                <div id="temperatureDiv3" class="fs-1 text-white fw-bold px-3">
+                                </div>
+                            </div>
+                            <div id="weatherInfo3" class="custom px-3 py-2">
+                            </div>
+                            <div id="custom3" class="d-flex mx-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class=" py-5">
+        <div class="container py-4">
+            <div class="row justify-content-between py-2 align-items-center">
+               <div class="col-md-8">
+                <div class="input-group mb-3 ">
+                    <input type="email" class="form-control" placeholder="Enter your email to subscribe...">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+               </div>
+               <div class="col-md-3 col-md-offset-1 ">
+                <div class="social-links my-4 ">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+               </div>
+
+            </div>
+            <div>
+                <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+  
+     
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
